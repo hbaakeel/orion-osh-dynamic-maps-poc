@@ -1,0 +1,16 @@
+<configuration>
+  <system.webServer>
+    <rewrite>
+      <rules>
+        <rule name="SolarWinds API Proxy" stopProcessing="true">
+          <match url="^api/solarwinds/(.*)" />
+          <action type="Rewrite"
+            url="https://YOUR-SERVER:17774/SolarWinds/InformationService/v3/Json/{R:1}" />
+          <serverVariables>
+            <set name="HTTP_Authorization" value="Basic YOUR_BASE64_CREDENTIALS" />
+          </serverVariables>
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
+</configuration>
