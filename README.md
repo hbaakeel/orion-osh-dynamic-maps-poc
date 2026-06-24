@@ -339,3 +339,11 @@ This topology map is a starting point. Some directions you could take it:
 - **Additional data sources** — overlay interface utilization, response time, or alert counts from other SWIS entities
 
 The code for this project is available for reference in https://github.com/hbaakeel/orion-osh-dynamic-maps-poc . If you have questions or want to share your own customizations, drop a comment below.
+
+
+Disclaimer
+
+
+This project is a proof-of-concept and is not intended as a production-ready application. The device icons use simplified SVG representations created during development, and some devices will fall back to a generic default icon. The icon mappings, node type classification logic, and vendor detection rules will need to be adapted and expanded to reflect the devices, vendors, and naming conventions in your own environment. Treat this as a starting point to build on, not a finished product.
+
+
